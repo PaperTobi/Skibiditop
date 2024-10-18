@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -65,7 +65,7 @@ await Promise.all([
     }),
     createContext({
         ...CommonOpts,
-        globalName: "Vesktop",
+        globalName: "Skibiditop",
         entryPoints: ["src/renderer/index.ts"],
         outfile: "dist/js/renderer.js",
         format: "iife",
