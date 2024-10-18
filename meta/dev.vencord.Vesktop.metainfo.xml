@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 7.1-->
-  <id>dev.vencord.Vesktop</id>
+  <id>de.papertobi.Skibiditop</id>
   <name>Skibiditop</name>
   <summary>Snappier Discord app with Vencord</summary>
   <developer_name>Vencord Contributors</developer_name>
