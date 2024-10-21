@@ -1,6 +1,6 @@
-# Vesktop
+# Skibiditop
 
-Vesktop is a custom Discord desktop app
+Skibiditop is a custom Discord desktop app
 
 **Main features**:
 - Vencord preinstalled
@@ -60,8 +60,8 @@ Below you can find unofficial packages created by the community. They are not of
 Packaging will create builds in the dist/ folder
 
 ```sh
-git clone https://github.com/Vencord/Vesktop
-cd Vesktop
+git clone https://github.com/PaperTobi/Skibiditop
+cd Skibiditop
 
 # Install Dependencies
 pnpm i
