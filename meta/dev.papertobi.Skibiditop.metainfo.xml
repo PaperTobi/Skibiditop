@@ -28,10 +28,6 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.9.0" date="2024-10-21" type="stable">
-      <url>https://github.com/PaperTobi/Skibiditop/releases/tag/v1.5.3</url>
-      <description/>
-    </release>
     <release version="1.5.3" date="2024-07-04" type="stable">
       <url>https://github.com/Vencord/Vesktop/releases/tag/v1.5.3</url>
       <description>
