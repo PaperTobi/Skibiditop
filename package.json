@@ -1,8 +1,8 @@
 {
-    "name": "vesktop",
+    "name": "skibiditop",
     "version": "1.5.3",
     "private": true,
-    "description": "Vesktop is a custom Discord desktop app",
+    "description": "Skibiditop is a custom Discord desktop app. Based on Vesktop",
     "keywords": [],
     "homepage": "https://vencord.dev/",
     "license": "GPL-3.0",
@@ -61,8 +61,8 @@
         "pnpm": ">=8"
     },
     "build": {
-        "appId": "dev.vencord.vesktop",
-        "productName": "Vesktop",
+        "appId": "dev.papertobi.skibiditop",
+        "productName": "Skibiditop",
         "files": [
             "!*",
             "!node_modules",
@@ -107,7 +107,7 @@
                 }
             ],
             "desktop": {
-                "Name": "Vesktop",
+                "Name": "Skibiditop",
                 "GenericName": "Internet Messenger",
                 "Type": "Application",
                 "Categories": "Network;InstantMessaging;Chat;",
