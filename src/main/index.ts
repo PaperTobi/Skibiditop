@@ -79,7 +79,7 @@ function init() {
     });
 
     app.whenReady().then(async () => {
-        if (process.platform === "win32") app.setAppUserModelId("dev.vencord.vesktop");
+        if (process.platform === "win32") app.setAppUserModelId("dev.papertobi.skibiditop");
 
         registerScreenShareHandler();
         registerMediaPermissionsHandler();
