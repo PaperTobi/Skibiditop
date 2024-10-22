@@ -1,34 +1,63 @@
-<head>
+ <head>
     <link rel="stylesheet" href="./style.css" type="text/css" />
 
     <style>
         body {
             height: 100vh;
-
             padding: 1.5em;
             padding-bottom: 1em;
-
             border: 1px solid var(--fg-semi-trans);
             border-top: none;
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
+            background: #141414;
+            color: #f5f5f5;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            animation: skibidi 2s infinite alternate;
+        }
+
+        @keyframes skibidi {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(5deg); }
         }
 
         select {
-            background: var(--bg);
-            color: var(--fg);
+            background: #202020;
+            color: #ff5555;
             padding: 0.3em;
             margin: -0.3em;
             border-radius: 6px;
+            border: 2px solid #ff5555;
         }
 
         h1 {
             margin: 0.4em 0 0;
+            font-size: 2.5em;
+            color: #ff5555;
+            text-shadow: 2px 2px #ffae00;
+            text-align: center;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
         }
 
         p {
             margin: 1em 0 2em;
+            font-size: 1.2em;
+            text-align: center;
         }
 
         form {
@@ -43,21 +72,6 @@
             justify-content: space-between;
         }
 
-        label:has(input[type="checkbox"]),
-        select {
-            cursor: pointer;
-        }
-
-        label:not(:last-child)::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            width: 100%;
-            height: 1px;
-            background-color: var(--fg-secondary);
-            opacity: 0.5;
-        }
-
         label div {
             display: grid;
             gap: 0.2em;
@@ -66,14 +80,15 @@
         label h2 {
             margin: 0;
             font-weight: normal;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             line-height: 1rem;
+            color: #ffae00;
         }
 
         label span {
             font-size: 0.9rem;
             font-weight: 400;
-            color: var(--fg-secondary);
+            color: #ff5555;
         }
 
         #buttons {
@@ -85,12 +100,13 @@
 
         button {
             padding: 0.6em;
-            background: red;
-            color: white;
+            background: #ff5555;
+            color: #f5f5f5;
             border-radius: 6px;
             border: none;
             cursor: pointer;
             transition: 200ms filter;
+            font-size: 1.2em;
         }
 
         button:hover {
@@ -98,14 +114,14 @@
         }
 
         #submit {
-            background: green;
+            background: #ffae00;
         }
     </style>
 </head>
 
 <body>
     <h1>Welcome to Skibiditop</h1>
-    <p>Let's customise your experience!</p>
+    <p>Time to customize your ultimate Skibidi journey!</p>
 
     <form>
         <label>
@@ -120,7 +136,7 @@
         <label>
             <div>
                 <h2>Start with System</h2>
-                <span>Automatically open Skibiditop when your computer starts</span>
+                <span>Automatically open Skibiditop when your PC starts with a Skibidi Bop!</span>
             </div>
             <input type="checkbox" name="autoStart" />
         </label>
@@ -129,7 +145,7 @@
             <div>
                 <h2>Rich Presence</h2>
                 <span
-                    >Enable Rich presence (game activity) via
+                    >Enable Rich Presence (show off your game domination!) via
                     <a href="https://github.com/OpenAsar/arrpc" target="_blank">arRPC</a></span
                 >
             </div>
@@ -139,7 +155,7 @@
         <label>
             <div>
                 <h2>Import Settings</h2>
-                <span>Import Settings from existing Vencord install (if found)</span>
+                <span>Grab settings from your previous epic Vencord setup</span>
             </div>
             <input type="checkbox" name="importSettings" checked />
         </label>
@@ -147,14 +163,14 @@
         <label>
             <div>
                 <h2>Minimise to Tray</h2>
-                <span>Minimise to Tray when closing</span>
+                <span>Minimize to Tray when you skibidi your way out!</span>
             </div>
             <input type="checkbox" name="minimizeToTray" checked />
         </label>
     </form>
     <div id="buttons">
         <button id="cancel">Quit</button>
-        <button id="submit">Submit</button>
+        <button id="submit">Skibidi!</button>
     </div>
 </body>
 
