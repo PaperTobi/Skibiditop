@@ -28,6 +28,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1" date="2024-10-22" type="stable">
+      <url>https://github.com/PaperTobi/Skibiditop/releases/tag/v0.1</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Metainfo for  by @github-actions</li>
+        </ul>
+      </description>
+    </release>
   </releases>
   <url type="homepage">https://vencord.dev/</url>
   <url type="bugtracker">https://github.com/Vencord/Vesktop/issues</url>
