@@ -42,7 +42,7 @@ const customSettingsSections = (
 ).customSections;
 
 customSettingsSections.push(() => ({
-    section: "Vesktop",
+    section: "Skividiiiiiiiiiiii",
     label: "Skibiditop Settings",
     element: SettingsUi,
     className: "vc-vesktop-settings"
