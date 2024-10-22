@@ -6,7 +6,7 @@
     "keywords": [],
     "homepage": "https://vencord.dev/",
     "license": "GPL-3.0",
-    "author": "Vendicated <vendicated@riseup.net>",
+    "author": "PaperTobi <papertobi-contact@proton.me>",
     "main": "dist/js/main.js",
     "scripts": {
         "build": "tsx scripts/build/build.mts",
