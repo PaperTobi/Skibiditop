@@ -12,7 +12,7 @@ Skibiditop is a custom Discord desktop app
 
 Download the latest version of Skibiditop:
 
-- [Download Latest version](https://github.com/PaperTobi/Skibiditop/releases/latest)
+- [Download](https://github.com/PaperTobi/Skibiditop/releases/latest)
 
 ## Building from Source
 
