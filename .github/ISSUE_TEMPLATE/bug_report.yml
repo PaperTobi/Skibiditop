@@ -1,5 +1,5 @@
 name: 🐛 Bug / Crash Report
-description: Create a bug or crash report for Vesktop
+description: Create a bug or crash report for Skibiditop
 labels: [bug]
 title: "[Bug] <title>"
 
@@ -11,13 +11,13 @@ body:
 
               Make sure a similar issue doesn't already exist by [searching the existing issues](https://github.com/Vencord/Vesktop/issues?q=is%3Aissue) for keywords!
 
-              Make sure both Vesktop and Vencord are fully up to date. You can update Vencord by right-clicking the Vesktop tray icon and pressing "Repair Vencord"
+              Make sure both Skibiditop and Vencord are fully up to date. You can update Vencord by right-clicking the Skibiditop tray icon and pressing "Repair Vencord"
 
               **DO NOT REPORT** any of the following issues:
               - Purely graphical glitches like flickering, scaling issues[^1]
               - App crashing / not showing window with mentions of the gpu process in the stacktrace[^1]
               - Screenshare not starting, black screening or crashing[^2]
-              - Vencord related issues: This is the Vesktop repo, not Vencord
+              - Vencord related issues: This is the Skibiditop repo, not Vencord
               - Captchas[^3]
               - Issues with opening URLs[^4]
               - Issues with Notifications[^4]
@@ -27,14 +27,14 @@ body:
 
               Linux users: Please only report issues with supported packages (flatpak and any builds from the README / releases).
               We do not support other packages, like the AUR or Nix packages, so please first make sure your issue is reproducible with official releases,
-              like [our Flatpak](https://flathub.org/apps/dev.vencord.Vesktop) or [AppImage](https://vencord.dev/download/vesktop/amd64/appimage)
+              like [our Flatpak](https://flathub.org/apps/dev.vencord.Vesktop) or [AppImage](https://github.com/papertobi/skibiditop/releases/latest)
 
 
-              [^1]: GPU issue. Disable hardware acceleration in Vesktop Settings or run with `--disable-gpu`
+              [^1]: GPU issue. Disable hardware acceleration in Skibiditop Settings or run with `--disable-gpu`
               [^2]: System issue. You will have to fix it
               [^3]: If you are receiving a lot of captchas, it means Discord thinks you might be a bot. Make sure you're not using a VPN/Proxy
               [^4]: These things are handled by Chromium / Electron, not us. If they don't work, it's either an issue with your system or a bug with Chromium.
-              [^5]: You are likely using the Vesktop flatpak and trying to drop a file the flatpak can't access. You can fix this by installing Flatseal and using it to grant Vesktop full access to your files
+              [^5]: You are likely using the SkibiditopF flatpak and trying to drop a file the flatpak can't access. You can fix this by installing Flatseal and using it to grant Skibiditop full access to your files
               [^6]: Issue on your end, you have to fix it. Try changing your DNS to [1.1.1.1 (Cloudflare DNS)](https://developers.cloudflare.com/1.1.1.1/setup/)
               
     - type: input
@@ -68,7 +68,7 @@ body:
       id: install-type
       attributes:
           label: Package Type
-          description: What kind of Vesktop package are you using? (Setup exe, Portable, Flatpak, AppImage, Deb, etc)
+          description: What kind of Skibiditop package are you using? (Setup exe, Portable, Flatpak, AppImage, Deb, etc)
           placeholder: Flatpak
       validations:
           required: true
@@ -108,7 +108,7 @@ body:
       id: debug-logs
       attributes:
           label: Debug Logs
-          description: Run vesktop from the command line. Include the relevant command line output here. If there are any lines that seem relevant, try googling them or searching existing issues
+          description: Run Skibiditop from the command line. Include the relevant command line output here. If there are any lines that seem relevant, try googling them or searching existing issues
           value: |
               ```
               Replace this text with your crash-log. Do not remove the backticks
@@ -120,11 +120,11 @@ body:
       id: agreement-check
       attributes:
           label: Request Agreement
-          description: We only accept reports for bugs that happen on supported and up to date Vesktop releases
+          description: We only accept reports for bugs that happen on supported and up to date Skibiditop releases
           options:
               - label: I have searched the existing issues and found no similar issue
                 required: true
-              - label: I am using the latest Vesktop and Vencord versions
+              - label: I am using the latest Skibiditop and Vencord versions
                 required: true
               - label: This issue occurs on an official release (not just the AUR or Nix packages)
                 required: true
