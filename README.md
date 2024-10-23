@@ -10,9 +10,9 @@ Skibiditop is a custom Discord desktop app
 
 ## Installing
 
-Download the latest version of Skibiditop for your platform from the link below:
+Download the latest version of Skibiditop:
 
-- [Download Latest Skibiditop Release](https://github.com/PaperTobi/Skibiditop/releases/latest)
+- [Download Latest version](https://github.com/PaperTobi/Skibiditop/releases/latest)
 
 ## Building from Source
 
