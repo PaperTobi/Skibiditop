@@ -41,7 +41,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                                 break;
                             case "ok":
                                 Toasts.show({
-                                    message: "Vencord install changed. Fully restart Vesktop to apply.",
+                                    message: "Vencord install changed. Fully restart Skibiditop to apply.",
                                     id: Toasts.genId(),
                                     type: Toasts.Type.SUCCESS
                                 });
