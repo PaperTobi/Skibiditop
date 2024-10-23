@@ -9,32 +9,24 @@ body:
           value: |
               **Thanks 🩷 for taking the time to fill out this bug report! Before proceeding, please read the following**
 
-              Make sure a similar issue doesn't already exist by [searching the existing issues](https://github.com/PaperTobi/Skibiditop/issues?q=is%3Aissue) for keywords!
+              Make sure a similar issue doesn't already exist by [searching the existing issues](https://github.com/Equicord/Equibop/issues?q=is%3Aissue) for keywords!
 
               Make sure both Skibiditop and Vencord are fully up to date. You can update Vencord by right-clicking the Skibiditop tray icon and pressing "Repair Vencord"
 
               **DO NOT REPORT** any of the following issues:
-              - Purely graphical glitches like flickering, scaling issues[^1]
-              - App crashing / not showing window with mentions of the gpu process in the stacktrace[^1]
-              - Screenshare not starting, black screening or crashing[^2]
-              - Vencord related issues: This is the Skibiditop repo, not Vencord
-              - Captchas[^3]
-              - Issues with opening URLs[^4]
-              - Issues with Notifications[^4]
-              - Issues with Input Methods[^4]
-              - Issues with File Drag and Drop[^5] 
-              - Network Errors[^6]
+              - Purely graphical glitches like flickering, scaling issues, etc: Issue with your gpu. Nothing we can do, update drivers or disable hardware acceleration
+              - Vencord related issues: This is the Vesktop repo, not Vencord
+              - **SCREENSHARE NOT STARTING** / black screening on Linux: Issue with your desktop environment, specifically its xdg-desktop-portal.
+                If that also doesn't work, you have to fix your systen. Inspect errors and google around.
 
-              Linux users: Please only report issues with supported packages (flatpak and any builds from the README / releases).
-              We do not support other packages, like the AUR or Nix packages, so please first make sure your issue is reproducible with official releases,
-              like [our Flatpak](https://flathub.org/apps/dev.vencord.Vesktop) or [AppImage](https://github.com/papertobi/skibiditop/releases/latest)
+              Linux users: Please only report issues with officially published packages
 
 
-              [^1]: GPU issue. Disable hardware acceleration in Skibiditop Settings or run with `--disable-gpu`
+              [^1]: GPU issue. Disable hardware acceleration in Vesktop Settings or run with `--disable-gpu`
               [^2]: System issue. You will have to fix it
               [^3]: If you are receiving a lot of captchas, it means Discord thinks you might be a bot. Make sure you're not using a VPN/Proxy
               [^4]: These things are handled by Chromium / Electron, not us. If they don't work, it's either an issue with your system or a bug with Chromium.
-              [^5]: You are likely using the SkibiditopF flatpak and trying to drop a file the flatpak can't access. You can fix this by installing Flatseal and using it to grant Skibiditop full access to your files
+              [^5]: You are likely using the Vesktop flatpak and trying to drop a file the flatpak can't access. You can fix this by installing Flatseal and using it to grant Vesktop full access to your files
               [^6]: Issue on your end, you have to fix it. Try changing your DNS to [1.1.1.1 (Cloudflare DNS)](https://developers.cloudflare.com/1.1.1.1/setup/)
               
     - type: input
@@ -63,15 +55,6 @@ body:
           placeholder: Gnome on Wayland
       validations:
           required: false
-
-    - type: input
-      id: install-type
-      attributes:
-          label: Package Type
-          description: What kind of Skibiditop package are you using? (Setup exe, Portable, Flatpak, AppImage, Deb, etc)
-          placeholder: Flatpak
-      validations:
-          required: true
 
     - type: textarea
       id: bug-description
@@ -108,7 +91,7 @@ body:
       id: debug-logs
       attributes:
           label: Debug Logs
-          description: Run Skibiditop from the command line. Include the relevant command line output here. If there are any lines that seem relevant, try googling them or searching existing issues
+          description: Run vencord from the command line. Include the relevant command line output here
           value: |
               ```
               Replace this text with your crash-log. Do not remove the backticks
@@ -126,5 +109,5 @@ body:
                 required: true
               - label: I am using the latest Skibiditop and Vencord versions
                 required: true
-              - label: This issue occurs on an official release (not just the AUR or Nix packages)
+              - label: This issue occurs on an official release (not just the AUR packages)
                 required: true
