@@ -1,8 +1,8 @@
 {
     "name": "skibiditop",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "private": true,
-    "description": "Skibiditop is a custom Discord desktop app. Based on Vesktop",
+    "description": "Skibiditop is a custom Discord desktop app. Fork from Vesktop",
     "keywords": [],
     "homepage": "https://vencord.dev/",
     "license": "GPL-3.0",
