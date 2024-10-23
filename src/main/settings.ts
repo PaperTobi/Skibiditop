@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -49,4 +49,4 @@ if (Object.hasOwn(Settings.plain, "firstLaunch") && !existsSync(STATE_FILE)) {
     writeFileSync(STATE_FILE, JSON.stringify(state, null, 4));
 }
 
-export const State = loadSettings<TState>(STATE_FILE, "Vesktop state");
+export const State = loadSettings<TState>(STATE_FILE, "Skibiditop state");

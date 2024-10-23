@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -27,7 +27,7 @@ export async function initArRPC() {
             mainWin.webContents
                 // Safety: Result of JSON.stringify should always be safe to equal
                 // Also, just to be super super safe, invite is regex validated above
-                .executeJavaScript(`Vesktop.openInviteModal(${JSON.stringify(invite)})`)
+                .executeJavaScript(`Skibiditop.openInviteModal(${JSON.stringify(invite)})`)
                 .then(callback);
         });
     } catch (e) {

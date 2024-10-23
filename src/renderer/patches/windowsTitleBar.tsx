@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -22,7 +22,7 @@ if (Settings.store.customTitleBar)
                     },
                     ...["close", "minimize", "maximize"].map(op => ({
                         match: new RegExp(String.raw`\i\.\i\.${op}\b`),
-                        replace: `VesktopNative.win.${op}`
+                        replace: `SkibiditopNative.win.${op}`
                     }))
                 ]
             }

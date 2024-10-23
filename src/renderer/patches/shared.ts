@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -22,7 +22,7 @@ export function addPatch<P extends PatchData>(p: P) {
             if (typeof r.replace === "string") r.replace = r.replace.replaceAll("$self", "VCDP");
         }
 
-        patch.plugin = "Vesktop";
+        patch.plugin = "Skibiditop";
         Vencord.Plugins.patches.push(patch);
     }
 

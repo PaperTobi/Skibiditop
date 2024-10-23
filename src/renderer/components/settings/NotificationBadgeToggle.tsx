@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -16,7 +16,7 @@ export const NotificationBadgeToggle: SettingsComponent = ({ settings }) => {
             onChange={v => {
                 settings.appBadge = v;
                 if (v) setBadge();
-                else VesktopNative.app.setBadgeCount(0);
+                else SkibiditopNative.app.setBadgeCount(0);
             }}
             note="Show mention badge on the app icon"
         >

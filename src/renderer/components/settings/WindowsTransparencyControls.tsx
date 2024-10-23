@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -10,7 +10,7 @@ import { Forms, Select } from "@vencord/types/webpack/common";
 import { SettingsComponent } from "./Settings";
 
 export const WindowsTransparencyControls: SettingsComponent = ({ settings }) => {
-    if (!VesktopNative.app.supportsWindowsTransparency()) return null;
+    if (!SkibiditopNative.app.supportsWindowsTransparency()) return null;
 
     return (
         <>
@@ -33,7 +33,7 @@ export const WindowsTransparencyControls: SettingsComponent = ({ settings }) => 
                     },
                     { label: "Tabbed (variant of Mica with stronger background tinting)", value: "tabbed" },
                     {
-                        label: "Acrylic (blurs the window behind Vesktop for a translucent background)",
+                        label: "Acrylic (blurs the window behind Skibiditop for a translucent background)",
                         value: "acrylic"
                     }
                 ]}

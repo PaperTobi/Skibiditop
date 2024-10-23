@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0
- * Vesktop, a desktop app aiming to give you a snappier Discord Experience
+ * Skibiditop, a desktop app aiming to give you a snappier Discord Experience
  * Copyright (c) 2023 Vendicated and Vencord contributors
  */
 
@@ -11,7 +11,7 @@ import { SettingsComponent } from "./Settings";
 
 export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
     const forceUpdate = useForceUpdater();
-    const vencordDir = VesktopNative.fileManager.getVencordDir();
+    const vencordDir = SkibiditopNative.fileManager.getVencordDir();
 
     return (
         <>
@@ -22,7 +22,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                         href="about:blank"
                         onClick={e => {
                             e.preventDefault();
-                            VesktopNative.fileManager.showItemInFolder(vencordDir!);
+                            SkibiditopNative.fileManager.showItemInFolder(vencordDir!);
                         }}
                     >
                         {vencordDir}
@@ -35,7 +35,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                 <Button
                     size={Button.Sizes.SMALL}
                     onClick={async () => {
-                        const choice = await VesktopNative.fileManager.selectVencordDir();
+                        const choice = await SkibiditopNative.fileManager.selectVencordDir();
                         switch (choice) {
                             case "cancelled":
                                 break;
@@ -64,7 +64,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                     size={Button.Sizes.SMALL}
                     color={Button.Colors.RED}
                     onClick={async () => {
-                        await VesktopNative.fileManager.selectVencordDir(null);
+                        await SkibiditopNative.fileManager.selectVencordDir(null);
                         forceUpdate();
                     }}
                 >
