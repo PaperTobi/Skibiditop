@@ -45,7 +45,7 @@ customSettingsSections.push(() => ({
     section: "Skividiiiiiiiiiiii",
     label: "Skibiditop Settings",
     element: SettingsUi,
-    className: "vc-Skibiditop-settings"
+    className: "vc-skibiditop-settings"
 }));
 
 const arRPC = Vencord.Plugins.plugins["WebRichPresence (arRPC)"] as any as {
