@@ -25,7 +25,7 @@ export async function openInviteModal(code: string) {
     const { invite } = await InviteActions.resolveInvite(code, "Desktop Modal");
     if (!invite) return false;
 
-    VesktopNative.win.focus();
+    SkibiditopNative.win.focus();
 
     FluxDispatcher.dispatch({
         type: "INVITE_MODAL_OPEN",
@@ -45,14 +45,14 @@ customSettingsSections.push(() => ({
     section: "Skividiiiiiiiiiiii",
     label: "Skibiditop Settings",
     element: SettingsUi,
-    className: "vc-vesktop-settings"
+    className: "vc-Skibiditop-settings"
 }));
 
 const arRPC = Vencord.Plugins.plugins["WebRichPresence (arRPC)"] as any as {
     handleEvent(e: MessageEvent): void;
 };
 
-VesktopNative.arrpc.onActivity(async data => {
+SkibiditopNative.arrpc.onActivity(async data => {
     if (!Settings.store.arRPC) return;
 
     await onceReady;
@@ -68,7 +68,7 @@ if (Settings.store[vencordDir]) {
             () =>
                 Alerts.show({
                     title: "Custom Vencord Location",
-                    body: "Due to security hardening changes in Vesktop, your custom Vencord location had to be reset. Please configure it again in the settings.",
+                    body: "Due to security hardening changes in Skibiditop, your custom Vencord location had to be reset. Please configure it again in the settings.",
                     onConfirm: () => delete Settings.store[vencordDir]
                 }),
             5000

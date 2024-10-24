@@ -14,7 +14,7 @@ Object.defineProperty(Notification.prototype, "onclick", {
     set(onClick) {
         originalSetOnClick.call(this, function (this: unknown) {
             onClick.apply(this, arguments);
-            VesktopNative.win.focus();
+            SkibiditopNative.win.focus();
         });
     },
     configurable: true

@@ -8,7 +8,7 @@ import { Logger } from "@vencord/types/utils";
 import { currentSettings } from "renderer/components/ScreenSharePicker";
 import { isLinux } from "renderer/utils";
 
-const logger = new Logger("VesktopStreamFixes");
+const logger = new Logger("SkibiditopStreamFixes");
 
 if (isLinux) {
     const original = navigator.mediaDevices.getDisplayMedia;

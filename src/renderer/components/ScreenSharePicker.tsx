@@ -64,7 +64,7 @@ interface Source {
 
 export let currentSettings: StreamSettings | null = null;
 
-const logger = new Logger("VesktopScreenShare");
+const logger = new Logger("SkibiditopScreenShare");
 
 addPatch({
     patches: [
@@ -114,7 +114,7 @@ if (isLinux) {
                 return;
             }
 
-            VesktopNative.virtmic.stop();
+            SkibiditopNative.virtmic.stop();
         });
     });
 }
@@ -132,11 +132,11 @@ export function openScreenSharePicker(screens: Source[], skipPicker: boolean) {
 
                         if (v.includeSources && v.includeSources !== "None") {
                             if (v.includeSources === "Entire System") {
-                                await VesktopNative.virtmic.startSystem(
+                                await SkibiditopNative.virtmic.startSystem(
                                     !v.excludeSources || isSpecialSource(v.excludeSources) ? [] : v.excludeSources
                                 );
                             } else {
-                                await VesktopNative.virtmic.start(v.includeSources);
+                                await SkibiditopNative.virtmic.start(v.includeSources);
                             }
                         }
 
@@ -318,7 +318,7 @@ function StreamSettings({
     const Settings = useSettings();
 
     const [thumb] = useAwaiter(
-        () => (skipPicker ? Promise.resolve(source.url) : VesktopNative.capturer.getLargeThumbnail(source.id)),
+        () => (skipPicker ? Promise.resolve(source.url) : SkibiditopNative.capturer.getLargeThumbnail(source.id)),
         {
             fallbackValue: source.url,
             deps: [source.id]
@@ -587,7 +587,7 @@ function AudioSourcePickerLinux({
     setIncludeSources: (s: AudioSources) => void;
     setExcludeSources: (s: AudioSources) => void;
 }) {
-    const [sources, _, loading] = useAwaiter(() => VesktopNative.virtmic.list(), {
+    const [sources, _, loading] = useAwaiter(() => SkibiditopNative.virtmic.list(), {
         fallbackValue: { ok: true, targets: [], hasPipewirePulse: true }
     });
 

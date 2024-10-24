@@ -8,16 +8,16 @@ import { app } from "electron";
 import { existsSync, mkdirSync, readdirSync, renameSync, rmdirSync } from "fs";
 import { dirname, join } from "path";
 
-const vesktopDir = dirname(process.execPath);
+const skibiditopDir = dirname(process.execPath);
 
 export const PORTABLE =
     process.platform === "win32" &&
     !process.execPath.toLowerCase().endsWith("electron.exe") &&
-    !existsSync(join(vesktopDir, "Uninstall Vesktop.exe"));
+    !existsSync(join(skibiditopDir, "Uninstall Skibiditop.exe"));
 
 const LEGACY_DATA_DIR = join(app.getPath("appData"), "VencordDesktop", "VencordDesktop");
 export const DATA_DIR =
-    process.env.VENCORD_USER_DATA_DIR || (PORTABLE ? join(vesktopDir, "Data") : join(app.getPath("userData")));
+    process.env.VENCORD_USER_DATA_DIR || (PORTABLE ? join(skibiditopDir, "Data") : join(app.getPath("userData")));
 
 mkdirSync(DATA_DIR, { recursive: true });
 
@@ -51,7 +51,7 @@ export const VENCORD_FILES_DIR =
     (require("./settings") as typeof import("./settings")).State.store.vencordDir ||
     join(SESSION_DATA_DIR, "vencordFiles");
 
-export const USER_AGENT = `Vesktop/${app.getVersion()} (https://github.com/PaperTobi/Skibiditop)`;
+export const USER_AGENT = `Skibiditop/${app.getVersion()} (https://github.com/PaperTobi/Skibiditop)`;
 
 // dimensions shamelessly stolen from Discord Desktop :3
 export const MIN_WIDTH = 940;
