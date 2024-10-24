@@ -11,7 +11,7 @@ import { SettingsComponent } from "./Settings";
 
 export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
     const forceUpdate = useForceUpdater();
-    const vencordDir = SkibiditopNative.fileManager.getVencordDir();
+    const vencordDir = VesktopNative.fileManager.getVencordDir();
 
     return (
         <>
@@ -22,7 +22,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                         href="about:blank"
                         onClick={e => {
                             e.preventDefault();
-                            SkibiditopNative.fileManager.showItemInFolder(vencordDir!);
+                            VesktopNative.fileManager.showItemInFolder(vencordDir!);
                         }}
                     >
                         {vencordDir}
@@ -35,7 +35,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                 <Button
                     size={Button.Sizes.SMALL}
                     onClick={async () => {
-                        const choice = await SkibiditopNative.fileManager.selectVencordDir();
+                        const choice = await VesktopNative.fileManager.selectVencordDir();
                         switch (choice) {
                             case "cancelled":
                                 break;
@@ -64,7 +64,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                     size={Button.Sizes.SMALL}
                     color={Button.Colors.RED}
                     onClick={async () => {
-                        await SkibiditopNative.fileManager.selectVencordDir(null);
+                        await VesktopNative.fileManager.selectVencordDir(null);
                         forceUpdate();
                     }}
                 >

@@ -14,7 +14,7 @@ import { State } from "../settings";
 // Bump this to re-show the prompt
 const layoutVersion = 2;
 // Get this from "show details" on the profile after exporting as a shared personal layout or using share with community
-const layoutId = "3080264545"; // Skibiditop Layout v2
+const layoutId = "3080264545"; // Vesktop Layout v2
 const numberRegex = /^[0-9]*$/;
 
 let steamPipeQueue = Promise.resolve();

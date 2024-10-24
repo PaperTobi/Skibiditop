@@ -22,7 +22,7 @@ export function addPatch<P extends PatchData>(p: P) {
             if (typeof r.replace === "string") r.replace = r.replace.replaceAll("$self", "VCDP");
         }
 
-        patch.plugin = "Skibiditop";
+        patch.plugin = "Vesktop";
         Vencord.Plugins.patches.push(patch);
     }
 

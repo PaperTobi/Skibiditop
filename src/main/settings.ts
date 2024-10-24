@@ -49,4 +49,4 @@ if (Object.hasOwn(Settings.plain, "firstLaunch") && !existsSync(STATE_FILE)) {
     writeFileSync(STATE_FILE, JSON.stringify(state, null, 4));
 }
 
-export const State = loadSettings<TState>(STATE_FILE, "Skibiditop state");
+export const State = loadSettings<TState>(STATE_FILE, "Vesktop state");

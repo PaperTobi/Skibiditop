@@ -8,9 +8,9 @@ import { contextBridge, ipcRenderer, webFrame } from "electron";
 import { readFileSync, watch } from "fs";
 
 import { IpcEvents } from "../shared/IpcEvents";
-import { SkibiditopNative } from "./SkibiditopNative";
+import { VesktopNative } from "./VesktopNative";
 
-contextBridge.exposeInMainWorld("SkibiditopNative", SkibiditopNative);
+contextBridge.exposeInMainWorld("VesktopNative", VesktopNative);
 
 require(ipcRenderer.sendSync(IpcEvents.GET_VENCORD_PRELOAD_FILE));
 

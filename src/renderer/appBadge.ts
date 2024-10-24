@@ -24,7 +24,7 @@ export function setBadge() {
         let totalCount = mentionCount + pendingRequests;
         if (!totalCount && hasUnread && !disableUnreadBadge) totalCount = -1;
 
-        SkibiditopNative.app.setBadgeCount(totalCount);
+        VesktopNative.app.setBadgeCount(totalCount);
     } catch (e) {
         console.error(e);
     }

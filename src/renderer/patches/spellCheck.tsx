@@ -38,12 +38,12 @@ addPatch({
         }
 
         const cb = (w: string, c: string[]) => {
-            SkibiditopNative.spellcheck.offSpellcheckResult(cb);
+            VesktopNative.spellcheck.offSpellcheckResult(cb);
             word = w;
             corrections = c;
             openMenu();
         };
-        SkibiditopNative.spellcheck.onSpellcheckResult(cb);
+        VesktopNative.spellcheck.onSpellcheckResult(cb);
     }
 });
 
@@ -51,7 +51,7 @@ addContextMenuPatch("textarea-context", children => {
     const spellCheckEnabled = useStateFromStores([SpellCheckStore], () => SpellCheckStore.isEnabled());
     const hasCorrections = Boolean(word && corrections?.length);
 
-    const availableLanguages = useMemo(SkibiditopNative.spellcheck.getAvailableLanguages, []);
+    const availableLanguages = useMemo(VesktopNative.spellcheck.getAvailableLanguages, []);
 
     const settings = useSettings();
     const spellCheckLanguages = (settings.spellCheckLanguages ??= [...new Set(navigator.languages)]);
@@ -68,14 +68,14 @@ addContextMenuPatch("textarea-context", children => {
                         <Menu.MenuItem
                             id={"vcd-spellcheck-suggestion-" + c}
                             label={c}
-                            action={() => SkibiditopNative.spellcheck.replaceMisspelling(c)}
+                            action={() => VesktopNative.spellcheck.replaceMisspelling(c)}
                         />
                     ))}
                     <Menu.MenuSeparator />
                     <Menu.MenuItem
                         id="vcd-spellcheck-learn"
                         label={`Add ${word} to dictionary`}
-                        action={() => SkibiditopNative.spellcheck.addToDictionary(word)}
+                        action={() => VesktopNative.spellcheck.addToDictionary(word)}
                     />
                 </>
             )}
