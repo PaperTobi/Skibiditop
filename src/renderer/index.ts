@@ -42,7 +42,7 @@ const customSettingsSections = (
 ).customSections;
 
 customSettingsSections.push(() => ({
-    section: "Skividiiiiiiiiiiii",
+    section: "Skibiditop",
     label: "Skibiditop Settings",
     element: SettingsUi,
     className: "vc-skibiditop-settings"
