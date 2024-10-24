@@ -28,6 +28,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.5.6" date="2024-10-24" type="stable">
+      <url>https://github.com/PaperTobi/Skibiditop/releases/tag/v0.5.6</url>
+      <description>
+        <p>What's Changed</p>
+        <ul>
+          <li>Metainfo for v0.5.5 by @github-actions</li>
+          <li>Revert changes :(</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.5.5" date="2024-10-24" type="stable">
       <url>https://github.com/PaperTobi/Skibiditop/releases/tag/v0.5.5</url>
       <description>
